@@ -11,8 +11,8 @@ const Race = () => {
       <CSSTransition in={flip} timeout={5000} classNames="lala" unmountOnExit>
         <div className="raceBoard">Race</div>
       </CSSTransition>
-      <button onClick={() => setFlip(true)}>close</button>
-      <button onClick={() => setFlip(false)}>open</button>
+      <button onClick={() => setFlip(true)}>open</button>
+      <button onClick={() => setFlip(false)}>close</button>
     </>
   );
 };
