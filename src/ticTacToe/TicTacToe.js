@@ -97,10 +97,8 @@ const TicTacToe = () => {
         onExited={() => {
           setInGameBoard(true);
         }}
-        // ref={myRef}
       >
         <PlayerChoosing
-          // ref={myRef}
           setInPlayerChoose={setInPlayerChoose}
           setCurrentPlayer={setCurrentPlayer}
         />
