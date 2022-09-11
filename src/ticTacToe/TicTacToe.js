@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
 import "./TicTacToe.css";

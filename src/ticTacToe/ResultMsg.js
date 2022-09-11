@@ -1,5 +1,5 @@
 import React from "react";
-import "./TicTacToe.css";
+// import "./TicTacToe.css";
 
 const ResultMsg = ({ gameResult, restart }) => {
   const message = () => {

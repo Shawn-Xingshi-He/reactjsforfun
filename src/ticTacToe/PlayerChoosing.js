@@ -4,26 +4,19 @@ import hoverSound from "../sound/hover.mp3";
 import clickSound from "../sound/click.mp3";
 
 const PlayerChoosing = ({ setInPlayerChoose, setCurrentPlayer }) => {
-  const choosePlayer = (player) => {
-    setCurrentPlayer(player);
-  };
-
   const hoverEffect = (num) => {
     const player = document.getElementsByClassName("player")[num];
     player.classList.toggle("hoverEffect");
   };
+
   return (
-    <div
-      className="playerChoosing"
-      onClick={() => {
-        setInPlayerChoose(false);
-      }}
-    >
+    <div className="playerChoosing">
       <div
         className="player"
         onClick={() => {
           new Audio(clickSound).play();
-          choosePlayer(false);
+          setCurrentPlayer(false);
+          setInPlayerChoose(false);
         }}
         onMouseEnter={() => {
           new Audio(hoverSound).play();
@@ -39,7 +32,8 @@ const PlayerChoosing = ({ setInPlayerChoose, setCurrentPlayer }) => {
         className="player"
         onClick={() => {
           new Audio(clickSound).play();
-          choosePlayer(true);
+          setCurrentPlayer(true);
+          setInPlayerChoose(false);
         }}
         onMouseEnter={() => {
           new Audio(hoverSound).play();
