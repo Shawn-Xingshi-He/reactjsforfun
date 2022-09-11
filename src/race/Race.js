@@ -72,7 +72,7 @@ const Race = () => {
           authenticate().then(loadClient);
         }}
       >
-        losad
+        Authenticate and load
       </button>
       <button
         onClick={() => {
